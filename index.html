@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/f208aa77be.js" crossorigin="anonymous"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+ 
+ <!-- // Main Area //  -->
+<div class="weatherApp">
+<div class="currentLocation">
+    <h1 id="city">Waterloo, Ontario</h1>
+    <ul>
+      <li id="currently">
+      </li>
+      <li>
+        Sunny
+      </li>
+    </ul>
+
+    <div class="container">
+        <div class="row align-items-start">
+          <div class="col-6">
+            <img src="media/sunny.png" alt="sun icon" class="weatherIcon">
+            <span class="temperature">5</span> <span class="units"> °C | <a href="#">°F</a></span> 
+          </div>
+          <div class="col-6">
+            <ul>
+                <li>
+                    Precipitation: 1%
+                </li>
+                <li>
+                    Humidity: 49%
+                </li>
+                <li>
+                    Wind: 11km/h
+                </li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Temperature</button>
+              <button type="button" class="btn btn-primary">Precipitation</button>
+              <button type="button" class="btn btn-primary">Wind</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+</div>
+
+
+<!-- // GRID // -->
+<div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col dayOne">
+        <div class="card" style="width: 6rem;">
+            <div class="card-body day">
+                Tue     
+            </div>
+            <img src="media/sunny.png" alt="sun icon">
+            <div class="card-body">
+                <p class="card-text"> <strong>6°</strong> -3° </p>
+            </div>
+        </div>
+      </div>
+      <div class="col dayTwo">
+        <div class="card" style="width: 6rem;">
+            <div class="card-body day">
+                Wed        
+            </div>
+            <img src="media/partly_cloudy.png" alt="partly cloudy icon">
+            <div class="card-body">
+                <p class="card-text"> <strong>4°</strong>-3° </p>
+            </div>
+        </div>
+      </div>
+      <div class="col dayThree">
+        <div class="card" style="width: 6rem;">
+            <div class="card-body day">
+                Thu    
+            </div>
+            <img src="media/partly_cloudy.png" alt="partly cloudy icon">
+            <div class="card-body">
+                <p class="card-text"> <strong>7°</strong>2° </p>
+            </div>
+        </div>
+      </div>
+      <div class="col dayFour">
+        <div class="card" style="width: 6rem;">
+            <div class="card-body day">
+                Fri       
+            </div>
+            <img src="media/rain_light.png" alt="light rain icon">
+            <div class="card-body">
+                <p class="card-text"> <strong>12°</strong>2°</p>
+            </div>
+        </div>
+      </div>
+      <div class="col dayFive">
+        <div class="card" style="width: 6rem;">
+            <div class="card-body day">
+                Sat        
+            </div>
+            <img src="media/rain_light.png" alt="light rain icon">
+            <div class="card-body">
+                <p class="card-text"> <strong>7°</strong>-7° </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+<!-- search bar -->
+
+<div class="container">
+  <div class="weather-app">
+    <form class="search-form" id="search-form">
+      <div class="row">
+        <div class="col-9">
+          <input
+            type="search"
+            placeholder="Type a city.."
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="form-control shadow-sm"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Search"
+            class="form-control btn btn-primary shadow-sm"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+ 
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>

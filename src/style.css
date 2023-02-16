@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: rgb(135, 135, 135);
+    font-size: 24px;
+    font-weight: 100px;
+    line-height: 28px;
+    margin: 0;
+   
+}
+
+li {
+color: rgb(135, 135, 135);
+font-size: 16px;
+font-wewight: 100;
+height: 19px;
+line-height: 1;
+list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    
+}
+
+.weatherApp {
+    border: 1px solid rgb(170, 168, 168);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 13px;
+
+}
+
+.temperature {
+    font-size: 64px;
+    color:rgb(33, 33, 33);
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.weatherIcon {
+   float: left;
+   padding-right: 10px;
+   
+    
+    
+}
+
+.units {
+    position: relative;
+    top: -32px;
+}
+
+.dayReadings {
+    padding-top: 100px;
+}
+
+.btn {
+    background: rgb(135, 135, 135);
+    border: rgb(135, 135, 135);
+    margin-bottom: 30px;
+}
+.btn:hover {
+    background: rgb(80, 80, 80);
+}
+
+.card-body {
+    padding: 0;
+    
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-bottom: 25px;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.card {
+    border: none;
+}

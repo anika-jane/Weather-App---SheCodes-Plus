@@ -67,11 +67,18 @@ currently.innerHTML = `${days[dayIndex]}, ${hours}:${minutes}`;
 
 function search(event) {
   event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = cityInput.value;
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let city = "paris";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 }
 
 let searchForm = document.querySelector("#search-form");
 
 searchForm.addEventListener("submit", search);
+
+
+// city search //
+
+
+
+let searchCity = document.querySelector("#city-input");
